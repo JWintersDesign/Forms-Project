@@ -5,7 +5,7 @@ input {
 }
 
 input[type=number] {
-  width: 100%;
+  width: auto;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -15,18 +15,19 @@ input[type=number] {
 
 /* Header Selectors */
 
-header[class=main-header] {
-	background-color: red;
-}
-
 header h1 {
 	background: #32475f;
 	color: white;
+	text-align: center;
 	margin: none;
 	padding: none;
-	text-align: center;
 }
 
+
+/* Body Selectors */
+body {
+	margin: none;
+}
 
 /* H1 Selectors */
 
@@ -44,12 +45,16 @@ h1 {
 hr {
 	border-style: double;
 	padding-top: none;
+	margin-top: 4px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 hr[class=thick] {
 	border: 3px solid #32475f;
 	padding-bottom: none;
 	border-collapse: collapse;
+	margin-bottom: 0;
 }
 
 /* Paragraph Selectors */
