@@ -1,3 +1,9 @@
+/* Input Selectors */
+
+input {
+  background-color: #eaeaea;
+}
+
 input[type=number] {
   width: 100%;
   padding: 12px 20px;
@@ -6,13 +12,23 @@ input[type=number] {
   border-color: red;
 }
 
-header {
-	background-color: white;
+
+/* Header Selectors */
+
+header[class=main-header] {
+	background-color: red;
 }
 
-input {
-  background-color: #eaeaea;
+header h1 {
+	background: #32475f;
+	color: white;
+	margin: none;
+	padding: none;
+	text-align: center;
 }
+
+
+/* H1 Selectors */
 
 h1 {
 	width: 100%;
@@ -21,3 +37,69 @@ h1 {
 	background-color: #32475f;
 	color: white;
 }
+
+
+/* Line Break Selectors */
+
+hr {
+	border-style: double;
+	padding-top: none;
+}
+
+hr[class=thick] {
+	border: 3px solid #32475f;
+	padding-bottom: none;
+	border-collapse: collapse;
+}
+
+/* Paragraph Selectors */
+
+p {
+	text-align: center;
+}
+
+p[class=header-p] {
+	color: #b7b7b7
+}
+
+
+/* H2 Selectors */
+
+h2 {
+	text-align: center;
+	color: #1c2f54;
+}
+
+
+/* Legend Selectors */
+
+legend {
+	border: none;
+	font-size: 1.5em;
+	color: #1c2f54;
+	font-weight: bold;
+	
+}
+
+legend[class=contact-information] {
+	color: #243a64
+}
+
+
+
+/* Fieldset Selectors */
+
+fieldset {
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
