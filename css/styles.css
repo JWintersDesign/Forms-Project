@@ -1,7 +1,12 @@
 /* Input Selectors */
 
 input {
-  background-color: #eaeaea;
+  background: #eaeaea;
+  width: 93%;
+  max-width: 93%;
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
 }
 
 input[type=number] {
@@ -13,14 +18,51 @@ input[type=number] {
 }
 
 
+/* Select Menu Selectors */
+select {
+  background: #eaeaea;
+  width: 99%;
+  max-width: 99%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+}
+
+option selected {
+	color: #cccccc;
+}
+
+
+/* Italicize Placeholder Text */
+::-webkit-input-placeholder {
+   font-style: italic;
+   padding-right: 3px;
+}
+:-moz-placeholder {
+   font-style: italic; 
+   padding-right: 3px; 
+}
+::-moz-placeholder {
+   font-style: italic; 
+   padding-right: 3px; 
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
+   padding-right: 3px;
+}
+
+
 /* Header Selectors */
 
 header h1 {
 	background: #32475f;
 	color: white;
 	text-align: center;
-	margin: none;
-	padding: none;
+	margin: 0;
+	padding: 0;
+	line-height: 75px;
+	font-size: 1.5em;
+	font-family: 'Noto Serif', serif;
 }
 
 
@@ -37,6 +79,16 @@ h1 {
 	text-align: center;
 	background-color: #32475f;
 	color: white;
+}
+
+
+/* H2 Selectors */
+
+h2 {
+	text-align: center;
+	color: #1c2f54;
+	font-size: 1.25em;
+	font-family: 'Noto Serif', serif;
 }
 
 
@@ -57,6 +109,7 @@ hr[class=thick] {
 	margin-bottom: 0;
 }
 
+
 /* Paragraph Selectors */
 
 p {
@@ -64,15 +117,18 @@ p {
 }
 
 p[class=header-p] {
-	color: #b7b7b7
+	color: #b7b7b7;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: 'Domine', serif;
 }
 
 
-/* H2 Selectors */
+/* Label Selectors */
 
-h2 {
-	text-align: center;
-	color: #1c2f54;
+label {
+	font-family: 'Noto Serif', serif;
+	color: #878787;
 }
 
 
@@ -83,11 +139,14 @@ legend {
 	font-size: 1.5em;
 	color: #1c2f54;
 	font-weight: bold;
+	font-family: 'Open Sans', serif;
 	
 }
 
 legend[class=contact-information] {
-	color: #243a64
+	color: #243a64;
+	font-family: 'Domine', serif;
+	font-size: 1.5em;
 }
 
 
@@ -98,7 +157,9 @@ fieldset {
 	border: none;
 }
 
-
+fieldset select {
+	color: #9b9b9b;
+}
 
 
 
