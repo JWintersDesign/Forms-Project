@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Domine:400,700&display=swap" rel="stylesheet">
 		<title>Newsletter Sign-Up</title>
 	</head>
@@ -28,7 +29,7 @@
 		<div class="form-box">
 			<div class="wrapper">
 		
-				<!–– Form Start ––>
+				<!– Form Start ––>
 				<form action="index.html" method="post">
 					
 					<!–– Title ––>
@@ -43,28 +44,28 @@
 						
 						<!–– Name Field ––>
 						<label for="name">Full Name</label><br>
-						<input type="text" id="name" name="user_name" style="text-align: right" placeholder="Required"><br><br>
+						<input type="text" id="name" name="user_name" style="text-align: right" placeholder="Required" required/><br><br>
 						
 						<!–– Email Field ––>
 						<label for="mail">Email Address</label><br>
-						<input type="email" id="mail" name="user_email" style="text-align: right" placeholder="Required"><br><br>
+						<input type="email" id="mail" name="user_email" style="text-align: right" placeholder="Required" required/><br><br>
 						
 						<!–– Phone Number Field ––>
 						<label for="phone">Phone Number</label><br>
-						<input type="text" id="phone" name="user_phone"><br><br>
+						<input type="tel" id="phone" name="user_phone" placeholder="Phone Number"><br><br>
 						
 						<!–– Street Address Field ––>
 						<label for="address">Street Address</label><br>
-						<input type="text" id="address" name="user_address"><br><br>
+						<input type="text" id="address" name="user_address" placeholder="Street Address"><br><br>
 						
 						<!–– City Field ––>
 						<label for="city">City</label><br>
-						<input type="text" id="city" name="user_city"><br><br>
+						<input type="text" id="city" name="user_city" placeholder="City"><br><br>
 						
 						<!–– State Field ––>
 						<label  for="state">State</label><br>
-						<select id="state" name="user_state">
-							<option selected="selected">Choose State</option>
+						<select id="state" name="user_state" required>
+							<option selected="selected" value="">Choose State</option>
 							<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
 							<option value="AZ">Arizona</option>
@@ -121,7 +122,7 @@
 						
 						<!–– Zip Code Field ––>
 						<label for="zip">Zip Code</label><br>
-						<input type="text" id="zip" name="user_zip"><br><br>
+						<input type="text" id="zip" name="user_zip" placeholder="Zip"><br><br>
 						
 						
 					
@@ -145,7 +146,7 @@
 						
 						
 						<!–– Newsletter Format Radio Buttons ––>
-						<label for="format">Newsletter format</label><br><br>
+						<label>Newsletter format</label><br><br>
 						<input type="radio" id="format" value="html" name="user_newsletter"><label for="format">HTML</label><br><br>
 						<input type="radio" id="format" value="plain_text" name="user_newsletter"><label for="format">Plain Text</label><br><br><br>
 						

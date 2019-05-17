@@ -2,34 +2,55 @@
 
 input {
   background: #eaeaea;
-  width: 93%;
-  max-width: 93%;
+  width: 95%;
   border-radius: 5px;
   border: none;
   padding: 15px;
+  text-align: right;
+  margin: 8px 0;
 }
 
-input[type=number] {
-  width: auto;
+input:focus{
+	text-align: right;
+	border: solid 2px darkblue;
+	padding: 10px;
+	margin: 8px 0;
+}
+
+input[id=zip] {
+  width: 30%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border-color: red;
 }
+
+
+textarea {
+	background: #eaeaea;
+	width: 95%;
+	height: 150px;
+	border-radius: 5px;
+	border: none;
+	padding: 15px;
+	text-align: right;
+	margin: 8px 0;
+}
+
 
 
 /* Select Menu Selectors */
 select {
   background: #eaeaea;
   width: 99%;
-  max-width: 99%;
   height: 50px;
   border-radius: 5px;
   border: none;
+  margin: 8px 0;
 }
 
 option selected {
 	color: #cccccc;
+	padding-left: 50px;
 }
 
 
@@ -37,18 +58,30 @@ option selected {
 ::-webkit-input-placeholder {
    font-style: italic;
    padding-right: 3px;
+   font-weight: 75;
+   font-family: 'Merriweather', serif;
+   font-size: .85em;
 }
 :-moz-placeholder {
    font-style: italic; 
-   padding-right: 3px; 
+   padding-right: 3px;
+   font-weight: 75; 
+   font-family: 'Merriweather', serif;
+   font-size: .85em;
 }
 ::-moz-placeholder {
    font-style: italic; 
-   padding-right: 3px; 
+   padding-right: 3px;
+   font-weight: 75;
+   font-family: 'Merriweather', serif;
+   font-size: .85em;
 }
 :-ms-input-placeholder {  
    font-style: italic; 
    padding-right: 3px;
+   font-weight: 75;
+   font-family: 'Merriweather', serif;
+   font-size: .85em;
 }
 
 
@@ -62,7 +95,7 @@ header h1 {
 	padding: 0;
 	line-height: 75px;
 	font-size: 1.5em;
-	font-family: 'Noto Serif', serif;
+	font-family: 'Merriweather', serif;
 }
 
 
@@ -88,7 +121,22 @@ h2 {
 	text-align: center;
 	color: #1c2f54;
 	font-size: 1.25em;
-	font-family: 'Noto Serif', serif;
+	font-family: 'Merriweather', serif;
+}
+
+
+/* Button Selectors */
+
+button {
+	width: 90%;
+	background: #35b9b3;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 25px 0;
+	font-size: 18px;
+	font-family: 'Merriweather', serif;
+	font-weight: bold;
 }
 
 
@@ -120,14 +168,14 @@ p[class=header-p] {
 	color: #b7b7b7;
 	margin-left: 20px;
 	margin-right: 20px;
-	font-family: 'Domine', serif;
+	font-family: 'Merriweather', serif;
 }
 
 
 /* Label Selectors */
 
 label {
-	font-family: 'Noto Serif', serif;
+	font-family: 'Merriweather', serif;
 	color: #878787;
 }
 
@@ -139,13 +187,13 @@ legend {
 	font-size: 1.5em;
 	color: #1c2f54;
 	font-weight: bold;
-	font-family: 'Open Sans', serif;
+	font-family: 'Merriweather', serif;
 	
 }
 
 legend[class=contact-information] {
 	color: #243a64;
-	font-family: 'Domine', serif;
+	font-family: 'Merriweather', serif;
 	font-size: 1.5em;
 }
 
