@@ -259,7 +259,23 @@ fieldset select {
 }
 
 
+@media (min-width: 768px) {
+	
+  .fieldset-1 label {
+    display: inline-block;
+    width: 25%;
+  }
+  .fieldset-1 input,
+  .fieldset-1 select {
+    display: inline-block;
+    width: 75%;
+  }
+  input#zipcode {
+    max-width: 25%;
+    display: inline-block;
+  }
 
+}
 
 
 
