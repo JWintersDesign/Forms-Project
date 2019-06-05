@@ -1,7 +1,7 @@
 /* Input Selectors */
 input {
   background: #eaeaea;
-  width: 95%;
+  width: 70%;
   border-radius: 5px;
   border: none;
   padding: 3.5% 2.5%;
@@ -228,6 +228,7 @@ label {
 	font-family: 'Merriweather', serif;
 	color: #878787;
 	vertical-align: middle;
+	width: 15%;
 }
 
 
@@ -257,6 +258,13 @@ fieldset {
 fieldset select {
 	color: #9b9b9b;
 }
+
+
+.checkboxes input, .checkboxes label {
+  display: inline-block;
+  padding: 10px;
+}
+
 
 
 @media (min-width: 768px) {
